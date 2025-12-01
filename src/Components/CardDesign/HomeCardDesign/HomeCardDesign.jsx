@@ -14,7 +14,7 @@ const HomeCardDesign = ({
 
   return (
     <div>
-      <div className="card w-90 shadow-sm h-[350px] bg-gray-100">
+      <div className="card shadow-sm h-[350px] bg-gray-100">
         <figure className="py-5">
           <img
             src={pictureURL}
