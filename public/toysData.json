@@ -1,6 +1,5 @@
 [
   {
-    "toyId": 1,
     "toyName": "Lego Classic Bricks",
     "sellerName": "Toys R Us Local",
     "sellerEmail": "contact@toysruslocal.com",
@@ -12,7 +11,6 @@
     "subCategory": "Building Blocks"
   },
   {
-    "toyId": 2,
     "toyName": "Remote Control Stunt Car",
     "sellerName": "Tech Toy Shop",
     "sellerEmail": "support@techtoys.net",
@@ -24,7 +22,6 @@
     "subCategory": "Vehicles"
   },
   {
-    "toyId": 3,
     "toyName": "Acoustic Toy Guitar",
     "sellerName": "Music Makers Inc.",
     "sellerEmail": "sales@musicmakers.org",
@@ -36,7 +33,6 @@
     "subCategory": "Musical Instruments"
   },
   {
-    "toyId": 4,
     "toyName": "Wooden Jigsaw Puzzle (Farm)",
     "sellerName": "Eco Play Toys",
     "sellerEmail": "hello@ecoplay.com",
@@ -48,7 +44,6 @@
     "subCategory": "Puzzles"
   },
   {
-    "toyId": 5,
     "toyName": "Dollhouse Miniature Set",
     "sellerName": "The Dollhouse Store",
     "sellerEmail": "service@dollhouse.co",
@@ -60,7 +55,6 @@
     "subCategory": "Dolls & Accessories"
   },
   {
-    "toyId": 6,
     "toyName": "Science Explorer Kit",
     "sellerName": "Mad Scientist Supply",
     "sellerEmail": "orders@madsci.com",
@@ -72,7 +66,7 @@
     "subCategory": "Educational"
   },
   {
-    "toyId": 7,
+
     "toyName": "Fuzzy Bear Plush Toy",
     "sellerName": "Cuddle Buddy Co.",
     "sellerEmail": "contact@cuddlebuddy.net",
@@ -84,7 +78,6 @@
     "subCategory": "Stuffed Animals"
   },
   {
-    "toyId": 8,
     "toyName": "Art Easel Double-Sided",
     "sellerName": "Creative Kids Supplies",
     "sellerEmail": "shop@creativekids.com",
@@ -96,7 +89,6 @@
     "subCategory": "Arts & Crafts"
   },
   {
-    "toyId": 9,
     "toyName": "Marble Run Construction Set",
     "sellerName": "Gravity Games",
     "sellerEmail": "hello@gravitygames.com",
@@ -108,7 +100,6 @@
     "subCategory": "Building Blocks"
   },
   {
-    "toyId": 10,
     "toyName": "T-Rex Action Figure",
     "sellerName": "Dino World Toys",
     "sellerEmail": "rex@dinoworld.biz",
@@ -120,7 +111,6 @@
     "subCategory": "Action Figures"
   },
   {
-    "toyId": 11,
     "toyName": "Portable Basketball Hoop",
     "sellerName": "Sports Fun Gear",
     "sellerEmail": "sales@sportsfun.net",
@@ -132,7 +122,6 @@
     "subCategory": "Outdoor Play"
   },
   {
-    "toyId": 12,
     "toyName": "Magnetic Dress-Up Doll",
     "sellerName": "Fashion Play Toys",
     "sellerEmail": "contact@fashionplay.com",
@@ -144,7 +133,6 @@
     "subCategory": "Dolls & Accessories"
   },
   {
-    "toyId": 13,
     "toyName": "Chemistry Lab Starter Set",
     "sellerName": "Junior Genius Kits",
     "sellerEmail": "support@juniorgenius.com",
@@ -156,7 +144,6 @@
     "subCategory": "Educational"
   },
   {
-    "toyId": 14,
     "toyName": "Police Interceptor Diecast",
     "sellerName": "Collector's Diecast",
     "sellerEmail": "info@collectordiecast.com",
@@ -168,7 +155,6 @@
     "subCategory": "Vehicles"
   },
   {
-    "toyId": 15,
     "toyName": "Kinetic Sand Castle Set",
     "sellerName": "Sensory Play Co.",
     "sellerEmail": "contact@sensoryplay.net",
@@ -180,7 +166,6 @@
     "subCategory": "Sensory Toys"
   },
   {
-    "toyId": 16,
     "toyName": "Viking Warrior Figure",
     "sellerName": "Fantasy Collectibles",
     "sellerEmail": "sales@fantasyfigs.com",
@@ -192,7 +177,6 @@
     "subCategory": "Action Figures"
   },
   {
-    "toyId": 17,
     "toyName": "Giant Bubble Wand Kit",
     "sellerName": "Outdoor Fun Games",
     "sellerEmail": "hello@outdoorfungames.com",
@@ -204,7 +188,6 @@
     "subCategory": "Outdoor Play"
   },
   {
-    "toyId": 18,
     "toyName": "DIY Friendship Bracelet Kit",
     "sellerName": "Crafty Corner Store",
     "sellerEmail": "info@craftycorner.org",
@@ -216,7 +199,6 @@
     "subCategory": "Arts & Crafts"
   },
   {
-    "toyId": 19,
     "toyName": "Robot Dog Programmable",
     "sellerName": "Future Tech Toys",
     "sellerEmail": "contact@futuretech.com",
@@ -228,7 +210,6 @@
     "subCategory": "Robotics"
   },
   {
-    "toyId": 20,
     "toyName": "World Map Floor Puzzle",
     "sellerName": "Globe Trotter Puzzles",
     "sellerEmail": "sales@globepuzzle.net",

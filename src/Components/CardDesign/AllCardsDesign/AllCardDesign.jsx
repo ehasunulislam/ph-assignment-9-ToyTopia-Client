@@ -14,18 +14,18 @@ const AllCardDesign = ({
     : "";
   return (
     <div>
-      <div className="card w-70 shadow-sm h-[350px] bg-gray-100">
+      <div className="card shadow-sm h-[350px] bg-gray-100">
         <figure className="py-5">
-          <img src={pictureURL} alt={toyName} className="w-30" />
+          <img src={pictureURL} alt={toyName} className="w-20" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{toyName}</h2>
+          <h2 className="card-title text-[0.9rem]">{toyName}</h2>
 
           <div className="flex justify-between items-center">
             <p>
-              Price: <span className="text-green-800">{price} $</span>
+              Price: <span className="text-green-600">{price} $</span>
             </p>
-            <span>available: {availableQuantity} peace</span>
+            <p className="text-[0.83rem]">available: <span className="text-yellow-600">{availableQuantity}</span> peace</p>
           </div>
 
           <div className="pt-3">
