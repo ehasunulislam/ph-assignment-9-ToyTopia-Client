@@ -10,14 +10,15 @@ const ShowAllCards = () => {
   const axios = useAxios();
 
   useEffect(() => {
-    axios.get('/toys-all')
-    .then(res => {
-      setToysData(res.data);
-      setLoading(false)
-    }) 
-    .catch(err => {
-      console.log(err.message)
-    })
+    axios
+      .get("/toys-all")
+      .then((res) => {
+        setToysData(res.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   }, [axios]);
 
   if (loading) {
@@ -27,7 +28,7 @@ const ShowAllCards = () => {
     <div className="my-10 px-4 sm:px-8 md:px-12 lg:px-23">
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 justify-items-center gap-6 sm:gap-8 lg:gap-3 mt-10">
         {toysData.map((item) => (
-          <Link key={item.id} to={`/product/productDetails/${item.toyId}`}>
+          <Link key={item._id} to={`/product/productDetails/${item._id}`}>
             <AllCardDesign
               pictureURL={item.pictureURL}
               toyName={item.toyName}
