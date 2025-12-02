@@ -113,65 +113,80 @@ const SellTable = () => {
   }
 
   return (
-    <div className="overflow-x-auto">
-      <table className="table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Product</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Rating</th>
-            <th>Created At</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {showData.map((item, index) => (
-            <tr key={item._id}>
-              <td>{index + 1}</td>
-
-              <td>
-                <div className="avatar">
-                  <div className="mask mask-squircle w-12 h-12">
-                    <img src={item.pictureURL} alt="product" />
-                  </div>
-                </div>
-              </td>
-
-              <td>{item.toyName}</td>
-              <td>{item.price} $</td>
-
-              <td className="flex items-center gap-1">
-                <IoStar className="text-yellow-400" /> {item.rating}
-              </td>
-
-              <td>{new Date(item.createdAt).toLocaleDateString()}</td>
-
-              <td className="flex gap-3">
-                <button
-                  className="btn btn-sm text-red-500"
-                  onClick={() => handleDelete(item._id)}
-                >
-                  <BsFillTrash3Fill />
-                </button>
-
-                <button
-                  className="btn btn-sm text-green-500"
-                  onClick={() => openModal(item)}
-                >
-                  <AiFillEdit />
-                </button>
-              </td>
+    <div className="w-full overflow-x-auto px-2 sm:px-4">
+      {/* TABLE WRAPPER */}
+      <div className="min-w-[600px] sm:min-w-full">
+        <table className="table w-full">
+          <thead className="text-sm sm:text-base">
+            <tr>
+              <th>#</th>
+              <th>Product</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Rating</th>
+              <th>Created At</th>
+              <th className="text-center">Action</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+
+          <tbody>
+            {showData.map((item, index) => (
+              <tr key={item._id} className="text-sm sm:text-base">
+                {/* Index */}
+                <td>{index + 1}</td>
+
+                {/* Image */}
+                <td>
+                  <div className="avatar">
+                    <div className="mask mask-squircle w-10 h-10 sm:w-12 sm:h-12">
+                      <img src={item.pictureURL} alt="product" />
+                    </div>
+                  </div>
+                </td>
+
+                {/* Name */}
+                <td className="max-w-[120px] sm:max-w-none truncate">
+                  {item.toyName}
+                </td>
+
+                {/* Price */}
+                <td>{item.price} $</td>
+
+                {/* Rating */}
+                <td className="flex items-center gap-1">
+                  <IoStar className="text-yellow-400" /> {item.rating}
+                </td>
+
+                {/* Created At */}
+                <td>{new Date(item.createdAt).toLocaleDateString()}</td>
+
+                {/* Actions */}
+                <td>
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
+                    <button
+                      className="btn btn-sm btn-outline text-red-500 w-full sm:w-auto"
+                      onClick={() => handleDelete(item._id)}
+                    >
+                      <BsFillTrash3Fill />
+                    </button>
+
+                    <button
+                      className="btn btn-sm btn-outline text-green-500 w-full sm:w-auto"
+                      onClick={() => openModal(item)}
+                    >
+                      <AiFillEdit />
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
       {/* EDIT MODAL */}
       <dialog ref={modalRef} className="modal">
-        <div className="modal-box w-96 mx-auto">
+        <div className="modal-box w-[95%] sm:w-96 max-w-full">
           <h3 className="font-bold text-lg mb-3">Edit Product</h3>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
@@ -209,11 +224,19 @@ const SellTable = () => {
               <p className="text-red-500 text-sm">Rating is required</p>
             )}
 
-            <div className="modal-action">
-              <button type="submit" className="btn btn-primary">
+            {/* Buttons */}
+            <div className="modal-action flex flex-col sm:flex-row gap-2">
+              <button
+                type="submit"
+                className="btn btn-primary w-full sm:w-auto"
+              >
                 Update
               </button>
-              <button type="button" className="btn" onClick={closeModal}>
+              <button
+                type="button"
+                className="btn w-full sm:w-auto"
+                onClick={closeModal}
+              >
                 Close
               </button>
             </div>
