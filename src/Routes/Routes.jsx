@@ -114,11 +114,13 @@ export const routes = createBrowserRouter(
                 },
                 {
                     path: "payment-success",
-                    Component: PaymentSuccess
+                    // Component: PaymentSuccess
+                    element: <PaymentSuccess></PaymentSuccess>
                 },
                 {
                     path: "payment-cancelled",
-                    Component: PaymentCancel,
+                    // Component: PaymentCancel,
+                    element: <PaymentCancel></PaymentCancel>
                 }
             ]
         },
