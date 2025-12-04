@@ -37,6 +37,12 @@ This project is built with a modern, scalable, and production‑ready React ecos
 
 ---
 
+## Backend Repo and Frontend Live Link
+- **Backend Github** - https://github.com/ehasunulislam/ph-assignment-9-ToyTopia-Server.git
+- **Frontend Live Link** - https://toystpia.ehasun.com/
+
+---
+
 
 ## 🧰 Forms, Validation & Feedback
 - **React Hook Form** – High-performance form handling.
@@ -64,24 +70,3 @@ This project is built with a modern, scalable, and production‑ready React ecos
 "preview": "vite preview"
 }
 ```
-
-
----
-
-
-## 📥 Installation
-```bash
-# Install dependencies
-yarn install # or npm install
-
-
-# Run development server
-yarn dev
-
-
-# Build for production
-yarn build
-```
-
-
----
